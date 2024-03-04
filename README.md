@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Page</title>
+    <title>Contact Page!</title>
     <style>
         body {
-            font-family:Helvetica, sans-serif;
+            font-family:Helvetica, sans-serif,Times new Roman, Nolo Sans;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -19,12 +19,12 @@
         }
         nav {
             background-color: #33d1ff;
-            color: white;
+            color: black;
             padding: 0.5em;
         }
 
         nav a {
-            color: white;
+            color: black;
             text-decoration: none;
             padding: 0.5em 1em;
             margin: 0 1em;
@@ -33,7 +33,7 @@
             background-color: #ff3363;
             color: white;
             text-align: center;
-            padding: 1em;
+            padding: 2em;
             width: 100%;
         }
 
@@ -44,37 +44,7 @@
             box-sizing: border-box;
         }
 
-        form {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            max-width: 400px; 
-        }
-
-        label {
-            margin-bottom: 0.5em;
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 0.5em;
-            margin-bottom: 1em;
-            box-sizing: border-box;
-        }
-
-        button {
-            padding: 1em 2em;
-            font-size: 16px;
-            background-color: #ff3363;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        button:hover {
-            background-color: #ff3352;
+        
         }
         .image-container {
             display: flex;
@@ -107,26 +77,19 @@
     <main>
         <h1>Contact Us!</h1>
         <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+            <a href="#">Home Page</a>
+            <a href="#">About Us Page</a>
+            <a href="#">Contact Page</a>
         </nav>
         <!--for this part ive added a placeholder image to be used for social media contact buttons later on-->
+
         <div class="image-container">
             <img src="image1.jpg" alt="Image 1">
            
         </div>
         <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button type="submit">Submit</button>
+          <!--the form box will go here below the header -->
+          <!-- will also have javascript coding here once youv're submitted the button-->
         </form>
         <footer>
             Creative Minds.
