@@ -1,13 +1,12 @@
-# Contact-Page
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Page!</title>
+    <title>Contact Us.Creative Minds</title>
     <style>
         body {
-            font-family:Helvetica, sans-serif,Times new Roman, Nolo Sans;
+            font-family:Helvetica, sans-serif;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -18,22 +17,22 @@
             min-height: 100vh;
         }
         nav {
-            background-color: #33d1ff;
-            color: black;
+            background-color: #2a2c2a;
+            color: white;
             padding: 0.5em;
         }
 
         nav a {
-            color: black;
+            color: white;
             text-decoration: none;
             padding: 0.5em 1em;
             margin: 0 1em;
         }
         header {
-            background-color: #ff3363;
+            background-color:#ea8dee;
             color: white;
             text-align: center;
-            padding: 2em;
+            padding: 1em;
             width: 100%;
         }
 
@@ -44,16 +43,49 @@
             box-sizing: border-box;
         }
 
-        
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 400px; 
         }
+
+        label {
+            margin-bottom: 0.5em;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.5em;
+            margin-bottom: 1em;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 1em 2em;
+            font-size: 16px;
+            background-color: #ea8dee;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #910091;
+        }
+        
+       
         .image-container {
             display: flex;
-            justify-content: flex-end; 
+            justify-content: right;
         }
 
         img {
             max-width: 100%; 
             height: auto; 
+            width: 400px;
             margin-left: 1em; 
         }
 
@@ -77,24 +109,33 @@
     <main>
         <h1>Contact Us!</h1>
         <nav>
-            <a href="#">Home Page</a>
-            <a href="#">About Us Page</a>
-            <a href="#">Contact Page</a>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
         </nav>
         <!--for this part ive added a placeholder image to be used for social media contact buttons later on-->
-
         <div class="image-container">
-            <img src="image1.jpg" alt="Image 1">
+            <img src="social media icons.jpg" alt="Image 1">
            
         </div>
-        <form>
-          <!--the form box will go here below the header -->
-          <!-- will also have javascript coding here once youv're submitted the button-->
+
+        <form action="/submit" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+    <input type="submit" value="Submit">
+  </form>
         </form>
-        <footer>
-            Creative Minds.
-        </footer>
+        
+        
     </main>
 
 </body>
 </html>
+                   
+           
+           
+  
